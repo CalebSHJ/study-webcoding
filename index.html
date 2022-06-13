@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Various Version of Bible Verse</title>
+	<title>Little Light Ministries</title>
 	<meta charset="utf-8">
 	<style>
 		a {
 			text-decoration: none;
-			
+		}
+		/* unvisited link */
+		a:link {
+  			color:aliceblue;
+		}
+
+		/* visited link */
+		a:visited {
+ 			 color: gray;
+		}
+
+		/* mouse over link */
+		a:hover {
+ 			 color: orange;
+		}
+
+		/* selected link */
+		a:active {
+  			color: blue;
 		}
 		h1::before {  
-			transform: scaleX(0);
+			transform: scaleY(1);
 			transform-origin: bottom right;
 			border-radius: 20%;
 		}
 
 		h1:hover::before {
-			transform: scaleX(1);
+			transform: scaleY(0);
 			transform-origin: bottom left;
 		}
 		h1::before {
@@ -30,14 +48,14 @@
 		}
 
 		li::before {  
-			transform:scaleX(0);
+			transform:scaleY(0);
 			transform-origin: bottom right;
 			border-radius: 40%;
 
 		}
 
 		li:hover::before {
-			transform:scaleX(1);
+			transform:scaleY(1);
 			transform-origin: bottom left;
 		}
 		li::before {
@@ -57,6 +75,7 @@
 		}
 		h1 {
 			font-size: 40px;
+			color: aliceblue;
 			text-align: center;
 			font-family:Verdana, Geneva, Tahoma, sans-serif;
 			border-bottom:5px groove goldenrod;
@@ -99,8 +118,8 @@
 </head>
 <body>
 	<!-- <div style="background-color:antiquewhite; width:70%; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;"> -->
-	<h1><a href="index.html" style="color:black;">Various Version of Bible Verse</a></h1>
-	<h2>Roman(로마서) 8:38-39</h2>
+	<h1><a href="index.html">Little Light Ministries</a></h1>
+	<h2>Romans(로마서) 8:38-39</h2>
 	<div>
 	<ol style="border: 5px outset goldenrod; width: 150px; border-radius:20%;">
 		<li><a href="1.html">BIBLE(NIV)</a></li>
@@ -108,7 +127,6 @@
   		<li><a href="3.html">BIBLE(ESV)</a></li>
 	</ol>
 	<img src="aaron-burden-535Npq1wFG8-unsplash.jpg" width="100%">
-
 
 	<!-- <div style="background-color:antiquewhite; width:70%; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;">
 		<h1><a href="index.html"><font color="black">Various Version of Bible Verse</font></a></h1>

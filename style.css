@@ -1,0 +1,135 @@
+body {
+    margin:0px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+/* }
+.saw {
+    color:gray; */
+}
+a {
+    text-decoration: none;
+}
+/* unvisited link */
+a:link {
+      color:black;
+}
+
+/* visited link */
+a:visited {
+      color: gray;
+}
+
+/* mouse over link */
+a:hover {
+      color: orange;
+}
+
+/* selected link */
+a:active {
+      color: blue;
+}
+#current {
+    color: red;
+    
+}
+h1::before {  
+    transform: scaleY(1);
+    transform-origin: bottom right;
+    border-radius: 20%;
+}
+
+h1:hover::before {
+    transform: scaleY(0);
+    transform-origin: bottom left;
+}
+h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(214, 166, 94);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom:2px solid grey;
+    border-radius: 20%;
+    margin:0px;
+    padding: 35px;
+    position: relative;
+}
+h3, h4 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px
+
+}
+li::before {  
+    transform:scaleX(0);
+    transform-origin: bottom right;
+    border-radius: 40%;
+}
+
+li:hover::before {
+    transform:scaleX(1);
+    transform-origin: bottom left;
+}
+li::before {
+    content: " ";
+    display: block; width: 130px;
+    position:absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(206, 234, 174);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+li {
+    position: relative;
+
+}
+#grid {
+    /* border: 2px solid grey; */
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    
+}
+#grid p {
+    font-size: 18px;
+}
+#grid ol {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    /* border-right: 2px solid grey;
+    width: 140px;
+    margin:0px; */
+    /*padding-top: 15px;
+    padding-bottom: 15px;*/
+    padding-left: 50px; 
+    }
+
+#grid div {
+    border-left: 2px ridge gray;  
+    border-bottom: 0px;
+    border-top: 2px ridge gray;
+    border-right: 0px;
+    border-radius: 20%;
+
+}
+@media(max-width:750px) {
+    #grid {display: block;}
+    #grid div {border-top:none; border-right: 2px ridge gray;
+        border-radius: 10%;
+    }	
+    
+
+}
